@@ -26,7 +26,7 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/rrweb-io/rrweb.git"
+    "url": "git://git@github.com/ShubhamSingh20/rrweb.git"
   },
   "keywords": [
     "rrweb"
