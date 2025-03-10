@@ -213,7 +213,11 @@ export function createPlayerService(
               });
             }
           }
-          applyEventsSynchronously(syncEvents);
+
+          // skip if in inactivity
+          if (syncEvents.length !== 0) {
+            applyEventsSynchronously(syncEvents);
+          }
           emitter.emit(ReplayerEvents.Flush);
           timer.start();
         },
